@@ -28,6 +28,10 @@ This will install curl, zsh, Oh My Zsh, Powerlevel10k, plugins, fzf, and symlink
 chsh -s $(which zsh)
 ```
 
+**4. Install a Nerd Font**
+
+Powerlevel10k requires a Nerd Font to display correctly. Download and install [MesloLGS NF](https://github.com/romkatv/powerlevel10k#meslo-nerd-font-patched-for-powerlevel10k) and set it in your terminal emulator.
+
 Then log out and back in.
 
 ## Machine-specific config

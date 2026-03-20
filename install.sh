@@ -6,6 +6,10 @@ DOTFILES="$(cd "$(dirname "$0")" && pwd)"
 # Install dependencies
 sudo apt update && sudo apt install -y curl zsh
 
+# Remove existing config files to avoid conflicts
+rm -f "$HOME/.zshrc"
+rm -f "$HOME/.p10k.zsh"
+
 # Symlink configs first so OMZ install finds them
 ln -sf "$DOTFILES/zshrc" "$HOME/.zshrc"
 ln -sf "$DOTFILES/p10k.zsh" "$HOME/.p10k.zsh"
