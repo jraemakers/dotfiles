@@ -41,3 +41,7 @@ The install script installs [MesloLGS NF](https://github.com/romkatv/powerlevel1
 ## Machine-specific config
 
 Anything that shouldn't be shared (secrets, machine-specific paths, env vars) goes in `~/.zshrc.local`, which is sourced if it exists and is not managed by this repo.
+
+## License
+
+[MIT](LICENSE)
