@@ -18,7 +18,9 @@ plugins=(
 
 source $ZSH/oh-my-zsh.sh
 
-autoload -Uz compinit && compinit
+# Up/down arrows search history by what's already typed
+bindkey '^[[A' history-substring-search-up
+bindkey '^[[B' history-substring-search-down
 
 # Machine-local overrides (not committed to git)
 [[ -f ~/.zshrc.local ]] && source ~/.zshrc.local
